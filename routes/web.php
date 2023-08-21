@@ -1,4 +1,4 @@
-<?php
+  <?php
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
@@ -61,7 +61,7 @@ Route::group(['middleware' => 'checkUserisLogin', 'prefix' => 'admin'], function
 
     Route::any('/save_tinymce_image', [AdminController::class, 'saveTinymceImage'])->name("save_tinymce_image");
 
-    //about
+    //portfolioP
 
     Route::get('portfolio/get', [PortfolioController::class, 'anydata'])->name('portfolio.anydata');
     Route::any('portfolio/singleStatuschange', [PortfolioController::class, 'SingleStatusChange'])->name('portfolio.Singlestatuschange');

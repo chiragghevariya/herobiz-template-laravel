@@ -30,7 +30,6 @@ class SettingController extends Controller
             'location' => 'required',
             'email' => 'required',
             'number' => 'required',
-            'status' => 'required',
         ]);
 
 
@@ -43,7 +42,6 @@ class SettingController extends Controller
         $obj->location = $request->location;
         $obj->email = $request->email;
         $obj->number = $request->number;
-        $obj->status = $request->status;
 
         $img = $request->file('favicon_logo');
 

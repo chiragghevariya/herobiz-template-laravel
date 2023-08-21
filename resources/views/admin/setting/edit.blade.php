@@ -177,21 +177,6 @@
                         </div>
                     </div>
 
-                    <div class="form-group row">
-                        <label for="exampleInputConfirmPassword2" class="col-sm-3 col-form-label">Status</label>
-                        <div class="col-sm-9">
-                            {!! Form::select('status', ['1' => 'Active', '0' => 'Inactive'], null, [
-                                'id' => 'status',
-                                'placeholder' => 'select status',
-                                'class' => 'form-control',
-                            ]) !!}
-                            @if ($errors->has('status'))
-                                <span class="text-danger">{{ $errors->first('status') }}</span>
-                            @endif
-                        </div>
-                    </div>
-
-
                     {!! Form::submit('submit', ['class' => 'btn btn-primary', 'id' => 'saveBtn']) !!}
 
                     <a href="{{ route('admin') }}" class="btn btn-danger">Cancle</a>

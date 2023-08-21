@@ -150,7 +150,6 @@ class CmsController extends Controller
     public function detail($myslug){
 
         $myData = \App\Models\Cms::where('slug',$myslug)->firstOrFail();
-        dd($myData);
         return view('dynamic',compact('myData'));
 
     }

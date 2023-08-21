@@ -217,7 +217,7 @@
                 <div class="d-flex justify-content-between align-items-start">
                     <div class="color-card">
                         <i class="mdi mdi-settings menu-icon"></i>
-                        <a href="{{ route('setting.index') }}" class="ab">GENERAL SETING</a>
+                        <a href="{{ route('setting.index') }}" class="ab">GENERAL SETTING</a>
                     </div>
                 </div>
             </div>
